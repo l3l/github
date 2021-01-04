@@ -1,119 +1,53 @@
 ## Introduction
-How to set the mac terminal easily
+How to use git command
 
 ## Getting Started
-### Install Oh My ZSH
+### The definitions
+- remote repository: the target git URL
+- remote (tracking) branch: <remote repository>/<branch>
 ```
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-### Install Powerlevel9k theme
-```
-$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/themes/powerlevel9k
-$ vi ~/.zshrc
-change ZSH_THEME="robbyrussell" to "powerlevel9k/powerlevel9k"
+ex) origin/master, origin/main
 ```
 
-### reopen zsh.sh
+To update remote branch from remote repository, use 'git fetch' command.
 ```
-$ zsh
+git fetch <remote repository> <local branch>:<remote branch>
 ```
+In this case, <remote branch> indicates without <remote repository>. This <remote branch> is called as 'upstream branch'.
+- tracking branch: the local branch from remote branch
 
-### Install Iterm2
-From https://www.iterm2.com/downloads.html
-```
-download iTerm
-move iTerm to application directory
-```
+### 1. git clone <git URL>
+At first, to download the git repository, you need to use 'git clone' command
 
-### Install Powerlevel9k font
-Powerlevel9k 테마 폰트 리포지토리를 다운로드 받고 그 폴더로 이동.
+### 2. git branch -vv
+Next, use 'git branch' command to list the branches.
 ```
-$ git clone https://github.com/powerline/fonts.git /tmp/powerlevel9k-fonts && cd $_
+ex) $ git branch -vv
+	  iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
+      master    1ae2a45 [origin/master] deploying index fix
+	* serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should do it
+	  testing   5ea463a trying something new
 ```
+iss53 local branch is tracking origin/iss53 (upstream branch) by 2 ahead which means that local branch has 2 more commits.
+master local branch is tracking origin/master as same.
+serverfix local branch is tracking teamone/server-fix-good by 3 ahead and 1 behind which means that local branch has 3 more commits that does not send to remote repository and 1 more commit remote repository does not merge with serverfix local branch.
+testing local branch is not tracking the remote branch.
 
-### install.sh를 실행해 폰트를 설치
-```
-$ sh ./install.sh
-```
+### 3. git checkout <local branch>
+Use 'git checkout' command to make new local branch.
+To get the traching branch from remote branch, use 'git checkout -b <local branch> <remote repository>/<remote branch>'.
 
-### 다운로드 받았던 리포지토리 삭제
-```
-$ cd .. && rm -rf /tmp/powerlevel9k-fonts
-```
+### 4. git add <file1> <file2> <file3> ...
+Use 'git add' command before commit to git repository.
+If you want update all the files, you can use 'git add .' easily.
 
-### Open iTerm settings
-```
-Command + ,
-Profiles > Text > Font > 'Meslo LG M DZ for Powerline'
-reopen iTerm
-```
+### 5. git commit -m "~~~"
+Use 'git commit' command to commit the updates to git repository.
+If you don't want to write comment, you can use 'git commit -a --allow-empty-message -m ""'.
 
-### set iTerm color scheme
-```
-$ mkdir -p ~/.iterm && curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Brogrammer.itermcolors > ~/.iterm/Brogrammer.itermcolors
-```
+### 6. git push <remote> <local branch>
 
-### Open iTerm settings
-```
-Command + ,
-Profiles > Colors > Color Presets > 'Import'
-Command + shift + g > '~/.iterm' > 'Brogrammer.itermcolors'
-Profiles > Colors > Color Presets > 'Brogrammer'
-reopen iTerm
-```
 
-### Setting vimrc
-```
-$ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-$ sh ~/.vim_runtime/install_awesome_vimrc.sh
-```
-
-### Setting .vimrc
-```
-$ cat <<EOF >> ~/.vimrc
-set hlsearch
-set nu
-set autoindent
-set scrolloff=2
-set wildmode=longest,list
-set ts=4
-set sts=4
-set sw=1
-set autowrite
-set autoread
-set cindent
-set bs=eol,start,indent
-set history=256
-set laststatus=2
-set paste
-set shiftwidth=4
-set showmatch
-set smartcase
-set smarttab
-set smartindent
-set softtabstop=4
-set tabstop=4
-set ruler
-set incsearch
-set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
-
-:hi CursorLine   cterm=NONE ctermbg=yellow ctermfg=white guibg=yellow guifg=white
-:hi CursorColumn cterm=NONE ctermbg=yellow ctermfg=white guibg=yellow guifg=white
-augroup CursorLine
-  au!
-  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  au WinLeave * setlocal nocursorline
-augroup END
-EOF
-```
-
-### Setting vim as Brogrammer
-```
-$ mkdir -p ~/.vim/colors
-$ curl https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master/colors/brogrammer.vim > ~/.vim/colors/brogrammer.vim
-add 'colorscheme brogrammer' to '~/.vimrc'
-```
 
 ## Changelog
 

@@ -10,6 +10,7 @@ How to set the mac terminal easily
 
 ## Install Powerlevel9k theme
 `$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/themes/powerlevel9k`
+
 `$ vi ~/.zshrc`
 `change ZSH_THEME="robbyrussell" to "powerlevel9k/powerlevel9k"`
 

@@ -11,16 +11,16 @@ ex) origin/master, origin/main
 
 To update remote branch from remote repository, use 'git fetch' command.
 ```
-git fetch <remote repository> <local branch>:<remote branch>
+$ git fetch <remote repository> <local branch>:<remote branch>
 ```
 In this case, <remote branch> indicates without <remote repository>. This <remote branch> is called as 'upstream branch'.
 - tracking branch: the local branch from remote branch
 
 ### 1. git clone <git URL>
-At first, to download the git repository, you need to use 'git clone' command
+At first, to download the git repository, you need to use `git clone` command
 
 ### 2. git branch -vv
-Next, use 'git branch' command to list the branches.
+Next, use `git branch` command to list the branches.
 ```
 ex) $ git branch -vv
       iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
@@ -34,19 +34,31 @@ ex) $ git branch -vv
 - testing local branch is not tracking the remote branch.
 
 ### 3. git checkout <local branch>
-Use 'git checkout' command to make new local branch.  
-To get the traching branch from remote branch, use 'git checkout -b <local branch> <remote repository>/<remote branch>'.
+Use `git checkout` command to make new local branch.  
+To get the traching branch from remote branch, use `git checkout -b <local branch> <remote repository>/<remote branch>`.
 
 ### 4. git add <file1> <file2> <file3> ...
-Use 'git add' command before commit to git repository.  
-If you want update all the files, you can use 'git add .' easily.
+Use `git add` command before commit to git repository.  
+If you want update all the files, you can use `git add .` easily.
 
 ### 5. git commit -m "~~~"
-Use 'git commit' command to commit the updates to git repository.  
-If you don't want to write comment, you can use 'git commit -a --allow-empty-message -m ""'.
+Use `git commit` command to commit the updates to git repository.  
+If you don't want to write comment, you can use `git commit -a --allow-empty-message -m ""`.
 
 ### 6. git push <remote> <local branch>
+Use `git push` command for sending local branch to remote repository with permission.
 
+## Additional git commands
+### Pull from remote branch
+```
+$ git fetch <remote repository> <local branch>:<remote branch>
+$ git merge <remote repository>/<remote branch>
+```
+
+### Track the remote branch
+```
+$ git checkout --track <remote repository>/<remote branch>
+```
 
 
 ## Changelog

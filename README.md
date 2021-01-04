@@ -6,7 +6,9 @@ How to set the mac terminal easily
 
 
 ## Install Oh My ZSH
-`$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+```
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ## Install Powerlevel9k theme
 ```
@@ -21,8 +23,9 @@ $ zsh
 ```
 
 ## Install Iterm2
-```
 From https://www.iterm2.com/downloads.html
+```
+download iTerm
 move iTerm to application directory
 ```
 
@@ -137,11 +140,9 @@ Please make sure to read the [Blog Guide](https://blog.pigno.se/post/18457633249
 
 Thank you to all the people who already contributed to Vue!
 
-<a href="https://github.com/vuejs/vue/graphs/contributors"><img src="https://opencollective.com/vuejs/contributors.svg?width=890" /></a>
-
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)
+[l3l]()
 
 Copyright (c) 2021-present, l3l

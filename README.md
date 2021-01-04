@@ -23,10 +23,10 @@ At first, to download the git repository, you need to use 'git clone' command
 Next, use 'git branch' command to list the branches.
 ```
 ex) $ git branch -vv
-	iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
-    master    1ae2a45 [origin/master] deploying index fix
-  * serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should do it
-	testing   5ea463a trying something new
+  iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
+  master    1ae2a45 [origin/master] deploying index fix
+* serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should do it
+  testing   5ea463a trying something new
 ```
 - iss53 local branch is tracking origin/iss53 (upstream branch) by 2 ahead which means that local branch has 2 more commits.
 - master local branch is tracking origin/master as same.

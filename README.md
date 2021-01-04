@@ -1,3 +1,5 @@
+# For macOS terminal
+
 ## Introduction
 How to set the mac terminal easily
 

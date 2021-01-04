@@ -63,7 +63,7 @@ Profiles > Colors > Color Presets > 'Brogrammer'
 reopen iTerm
 ```
 
-### setting vimrc
+### Setting vimrc
 ```
 $ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 $ sh ~/.vim_runtime/install_awesome_vimrc.sh
@@ -115,7 +115,7 @@ $ curl https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master
 add 'colorscheme brogrammer' to '~/.vimrc'
 ```
 
-### Changelog
+## Changelog
 
 Detailed changes for each release are documented in the [release notes](https://github.com/l3l/github/releases).
 
@@ -123,14 +123,14 @@ Detailed changes for each release are documented in the [release notes](https://
 
 - [Email]()
 
-### Contribution
+## Contribution
 
 Please make sure to read the [Blog Guide](https://blog.pigno.se/post/184576332493/완벽한-mac-작업환경-세팅하기-vim-zsh-tmux-iterm) before making a pull request. If you want to add more information, add it with a pull request to [this curated list](https://github.com/l3l/github.git)!
 
 Thank you to all the people who already contributed to Vue!
 
 
-### License
+## License
 
 [l3l]()
 

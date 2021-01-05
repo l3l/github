@@ -83,8 +83,13 @@ $ source commit_push.sh <local branch>
 ```
 
 ### fetch_merge.sh
+- without push
 ```
 $ source merge.sh <base local branch> <source remote branch>
+```
+- with push
+```
+$ source merge.sh <base local branch> <source remote branch> push
 ```
 
 

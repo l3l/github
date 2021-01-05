@@ -35,7 +35,7 @@ ex) $ git branch -vv
 
 ### 3. git checkout \<local branch\>
 Use `git checkout` command to make new local branch.  
-To get the traching branch from remote branch, use `git checkout -b <local branch> <remote repository>/<remote branch\>`.
+To get the traching branch from remote branch, use `git checkout -b <local branch> <remote repository>/<remote branch>`.
 
 ### 4. git add \<file1\> \<file2\> \<file3\> ...
 Use `git add` command before commit to git repository.  

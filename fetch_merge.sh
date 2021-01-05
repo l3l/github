@@ -1,5 +1,8 @@
-echo "fetch from origin remote branch" $1
-git fetch origin $1:$1
+echo "switch local branch to" $1
+git checkout $1
 
-echo "merge local branch with remote branch" $1
-git merge origin/$1
+echo "fetch from origin remote branch" $2
+git fetch origin $2:$2
+
+echo "merge local branch" $1 "with remote branch" $2
+git merge origin/$2

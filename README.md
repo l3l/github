@@ -66,6 +66,16 @@ $ git branch --set-upstream-to origin/serverfix
 $ git branch -u origin/serverfix
 ```
 
+### Remove the local branch
+```
+$ git branch --delete <local branch>
+```
+
+### Remove the remote branch
+```
+$ git push <remote repository> --delete <remote branch>
+```
+
 
 ## Changelog
 

@@ -60,6 +60,12 @@ $ git merge <remote repository>/<remote branch>
 $ git checkout --track <remote repository>/<remote branch>
 ```
 
+### Track the remote branch from local branch
+```
+$ git branch --set-upstream-to origin/serverfix
+$ git branch -u origin/serverfix
+```
+
 
 ## Changelog
 

@@ -4,7 +4,7 @@ How to use git command
 ## Getting Started
 ### The definitions
 - remote repository: the target git URL
-- remote (tracking) branch: \<remote repository\>/<branch>
+- remote (tracking) branch: \<remote repository\>/\<branch\>
 ```
 ex) origin/master, origin/main
 ```
@@ -13,10 +13,10 @@ To update remote branch from remote repository, use 'git fetch' command.
 ```
 $ git fetch <remote repository> <local branch>:<remote branch>
 ```
-In this case, <remote branch> indicates without <remote repository>. This <remote branch> is called as 'upstream branch'.
+In this case, \<remote branch\> indicates without \<remote repository\>. This \<remote branch\> is called as 'upstream branch'.
 - tracking branch: the local branch from remote branch
 
-### 1. git clone <git URL>
+### 1. git clone \<git URL\>
 At first, to download the git repository, you need to use `git clone` command
 
 ### 2. git branch -vv
@@ -33,11 +33,11 @@ ex) $ git branch -vv
 - serverfix local branch is tracking teamone/server-fix-good by 3 ahead and 1 behind which means that local branch has 3 more commits that does not send to remote repository and 1 more commit remote repository does not merge with serverfix local branch.
 - testing local branch is not tracking the remote branch.
 
-### 3. git checkout <local branch>
+### 3. git checkout \<local branch\>
 Use `git checkout` command to make new local branch.  
-To get the traching branch from remote branch, use `git checkout -b <local branch> <remote repository>/<remote branch>`.
+To get the traching branch from remote branch, use `git checkout -b <local branch> <remote repository>/<remote branch\>`.
 
-### 4. git add <file1> <file2> <file3> ...
+### 4. git add \<file1\> \<file2\> \<file3\> ...
 Use `git add` command before commit to git repository.  
 If you want update all the files, you can use `git add .` easily.
 
@@ -45,7 +45,7 @@ If you want update all the files, you can use `git add .` easily.
 Use `git commit` command to commit the updates to git repository.  
 If you don't want to write comment, you can use `git commit -a --allow-empty-message -m ""`.
 
-### 6. git push <remote> <local branch>
+### 6. git push \<remote\> \<local branch\>
 Use `git push` command for sending local branch to remote repository with permission.
 
 ## Additional git commands

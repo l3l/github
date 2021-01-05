@@ -4,7 +4,7 @@ How to use git command
 ## Getting Started
 ### The definitions
 - remote repository: the target git URL
-- remote (tracking) branch: <remote repository>/<branch>
+- remote (tracking) branch: \<remote repository\>/<branch>
 ```
 ex) origin/master, origin/main
 ```

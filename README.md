@@ -76,6 +76,16 @@ $ git branch --delete <local branch>
 $ git push <remote repository> --delete <remote branch>
 ```
 
+## commit_push.sh
+```
+$ source commit_push.sh <local branch>
+```
+
+## fetch_merge.sh
+```
+$ source merge.sh <base local branch> <source remote branch>
+```
+
 
 ## Changelog
 

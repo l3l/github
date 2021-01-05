@@ -77,7 +77,7 @@ Detailed changes for each release are documented in the [release notes](https://
 
 ## Contribution
 
-Please make sure to read the [Blog Guide](https://blog.pigno.se/post/184576332493/완벽한-mac-작업환경-세팅하기-vim-zsh-tmux-iterm) before making a pull request. If you want to add more information, add it with a pull request to [this curated list](https://github.com/l3l/github.git)!
+Please make sure to read the [Blog Guide](https://git-scm.com/book/ko/v2/Git-브랜치-리모트-브랜치#_delete_branches) before making a pull request. If you want to add more information, add it with a pull request to [this curated list](https://github.com/l3l/github.git)!
 
 Thank you to all the people who already contributed to Vue!
 
